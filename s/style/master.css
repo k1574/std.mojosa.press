@@ -38,8 +38,10 @@ header > *:not(:first-child) {
 	border-radius : 0.5rem ;
 }
 
-.content article {
+.content > article {
 	min-height: 85% ;
+	min-width : 25rem ;
+	width : 70% ;
 }
 
 footer {
