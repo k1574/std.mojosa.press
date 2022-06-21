@@ -12,7 +12,7 @@ body  > * {
 	margin-top : 0.5rem ;
 }
 
-header {
+body > header {
 	display : flex ;
 	flex-direction : row ;
 	align-items : left ;
@@ -20,9 +20,14 @@ header {
 	color : black ;
 }
 
-header > *:not(:first-child) {
+body > header > *:not(:first-child) {
 	margin-left : 1rem ;
 }
+
+.char-btn {
+	font-size : 2rem ;
+}
+
 
 .content {
 	display : flex ;
@@ -38,13 +43,13 @@ header > *:not(:first-child) {
 	border-radius : 0.5rem ;
 }
 
-.content > article {
+body > .content > article {
 	min-height: 85% ;
 	min-width : 25rem ;
 	width : 70% ;
 }
 
-footer {
+body > footer {
 	background : white;
 	color : black ;
 }
@@ -57,7 +62,12 @@ form.typepost > *:not(:first-child) {
 	margin-top : 0.5rem ;
 }
 
-form.typepost .post {
+form.typepost > .desc {
+	min-height : 4rem ;
+	min-width : 25rem ;
+}
+
+form.typepost > .post {
 	min-height : 25rem ;
 	min-width : 25rem ;
 }
