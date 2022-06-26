@@ -45,9 +45,16 @@ body > header > *:not(:first-child) {
 	border-radius : 0.5rem ;
 }
 
-body > .content > article {
-	min-height: 85% ;
-	width : 70% ;
+.content img {
+	max-width : 100% ;
+}
+
+.content .main-box {
+	min-width : 15rem ;
+	max-width : 80rem ;
+}
+
+body > .content article {
 }
 
 body > .content > .post-entry:not(:first-child) {
