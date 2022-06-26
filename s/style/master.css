@@ -35,18 +35,23 @@ body > header > *:not(:first-child) {
 	align-items : center ;
 }
 
+
 .content > * {
 	background-color : white ;
 	color : black ;
 	max-width : 80rem ;
+	min-width : 25rem ;
 	padding : 0.5rem ;
 	border-radius : 0.5rem ;
 }
 
 body > .content > article {
 	min-height: 85% ;
-	min-width : 25rem ;
 	width : 70% ;
+}
+
+body > .content > .post-entry:not(:first-child) {
+	margin-top : 1rem ;
 }
 
 body > footer {
