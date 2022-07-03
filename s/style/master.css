@@ -5,7 +5,7 @@ html {
 
 body {
 	background-color : none ;
-	height: 100% ;
+	height: fit-content ;
 }
 
 body  > * {
@@ -13,6 +13,8 @@ body  > * {
 }
 
 body > header {
+	position : sticky ;
+	top : 0 ;
 	display : flex ;
 	flex-direction : row ;
 	align-items : left ;
@@ -82,5 +84,18 @@ form.typepost > .desc {
 form.typepost > .post {
 	min-height : 25rem ;
 	min-width : 25rem ;
+}
+
+.page-btn-box {
+	border-width : 0.15rem ;
+	border-color : green ;
+	position : sticky ;
+	bottom : 0 ;
+	display : flex ;
+	flex-direction : row ;
+	justify-content : center ;
+	align-items : center ;
+	gap : 1rem ;
+	margin-top : 1rem ;
 }
 
