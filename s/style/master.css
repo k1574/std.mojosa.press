@@ -1,5 +1,5 @@
 html {
-	background : gray ;
+	background : #212529 ;
 	height : 100% ;
 }
 
@@ -18,8 +18,13 @@ body > header {
 	display : flex ;
 	flex-direction : row ;
 	align-items : left ;
-	background-color : white ;
+	background-color : none ;
 	color : black ;
+}
+
+body > header > * {
+	background-color : #FFDEAD ;
+	border-radius : 0.25rem ;
 }
 
 body > header > *:not(:first-child) {
@@ -30,7 +35,6 @@ body > header > *:not(:first-child) {
 	font-size : 2rem ;
 }
 
-
 .content {
 	display : flex ;
 	flex-direction : column ;
@@ -39,7 +43,7 @@ body > header > *:not(:first-child) {
 
 
 .content > * {
-	background-color : white ;
+	background-color : #FFDEAD ;
 	color : black ;
 	max-width : 80rem ;
 	min-width : 25rem ;
