@@ -1,20 +1,21 @@
 html {
 	background : #212529 ;
-	height : 100% ;
+	/*height : 100% ;*/
 }
 
 body {
-	background-color : none ;
+	/*background-color : none ;*/
+	width : 100% ;
 	height: fit-content ;
+	font-family : Dejavu Sans ;
+	font-size : 0.95rem ;
+	margin : 0 ;
 }
 
-body  > * {
-	margin-top : 0.5rem ;
-}
 
 body > header {
 	position : sticky ;
-	top : 0 ;
+	top : 0.25rem ;
 	display : flex ;
 	flex-direction : row ;
 	align-items : left ;
@@ -24,7 +25,6 @@ body > header {
 
 body > header > * {
 	background-color : #FFDEAD ;
-	border-radius : 0.25rem ;
 }
 
 body > header > *:not(:first-child) {
@@ -33,31 +33,40 @@ body > header > *:not(:first-child) {
 
 .char-btn {
 	font-size : 2rem ;
+	background-color : #353535 ;
+	color : white ;
+	border-radius : 0.25rem ;
+}
+
+
+a, a:visited {
+	text-decoration : none ;
+	color : blue ;
+}
+
+.char-btn a:visited, .char-btn a {
+	color : white ;
 }
 
 .content {
 	display : flex ;
 	flex-direction : column ;
 	align-items : center ;
+	margin-top : 1rem ;
+	padding : 1rem ;
 }
 
 
 .content > * {
 	background-color : #FFDEAD ;
-	color : black ;
-	max-width : 80rem ;
-	min-width : 25rem ;
 	padding : 0.5rem ;
+	width : 100% ;
+	margin : 1rem ;
 	border-radius : 0.5rem ;
 }
 
 .content img {
 	max-width : 100% ;
-}
-
-.content .main-box {
-	min-width : 15rem ;
-	max-width : 80rem ;
 }
 
 body > .content article {
@@ -72,34 +81,50 @@ body > footer {
 	color : black ;
 }
 
+form.typepost {
+	padding : 0.72rem ;
+	width : 100% ;
+}
+
 form.typepost > * {
 	display: block ;
+	width : 100% ;
+	min-height : 1rem ;
 }
 
 form.typepost > *:not(:first-child) {
 	margin-top : 0.5rem ;
 }
 
+form.typepost > .title {
+}
+
+form.typepost > .pass {
+	background-color : #E3DAC9 ;
+}
+
 form.typepost > .desc {
-	min-height : 4rem ;
-	min-width : 25rem ;
+	resize : vertical ;
+	height : 5rem ;
 }
 
 form.typepost > .post {
-	min-height : 25rem ;
-	min-width : 25rem ;
+	background : #F5F5DC  ;
+	resize : vertical ;
+	height : 25rem ;
 }
 
 .page-btn-box {
-	border-width : 0.15rem ;
-	border-color : green ;
 	position : sticky ;
-	bottom : 0 ;
+	bottom : 0.25rem ;
 	display : flex ;
+	color : white ;
+	background-color : #353535 ;
 	flex-direction : row ;
 	justify-content : center ;
 	align-items : center ;
 	gap : 1rem ;
-	margin-top : 1rem ;
+	margin-top : 0.25rem ;
+	width : fit-content ;
 }
 
