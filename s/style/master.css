@@ -7,9 +7,16 @@ body {
 	/*background-color : none ;*/
 	width : 100% ;
 	height: fit-content ;
+	overflow : scroll ;
 	font-family : Dejavu Sans ;
 	font-size : 0.95rem ;
 	margin : 0 ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family : Dejavu ;
+	margin-top : 0 ;
+	margin-bottom : 0 ;
 }
 
 
@@ -21,6 +28,10 @@ body > header {
 	align-items : left ;
 	background-color : none ;
 	color : black ;
+}
+
+body > * {
+	margin-top : 0 ;
 }
 
 body > header > * {
@@ -52,7 +63,6 @@ a, a:visited {
 	display : flex ;
 	flex-direction : column ;
 	align-items : center ;
-	margin-top : 1rem ;
 	padding : 1rem ;
 }
 
@@ -61,7 +71,7 @@ a, a:visited {
 	background-color : #FFDEAD ;
 	padding : 0.5rem ;
 	width : 100% ;
-	margin : 1rem ;
+	/*margin : 1rem ;*/
 	border-radius : 0.5rem ;
 }
 
@@ -97,6 +107,7 @@ form.typepost > *:not(:first-child) {
 }
 
 form.typepost > .title {
+	background-color : #FFFAF0 ;
 }
 
 form.typepost > .pass {
@@ -104,12 +115,13 @@ form.typepost > .pass {
 }
 
 form.typepost > .desc {
+	background : #F0FFF0 ;
 	resize : vertical ;
 	height : 5rem ;
 }
 
 form.typepost > .post {
-	background : #F5F5DC  ;
+	background : #fff5ee ;
 	resize : vertical ;
 	height : 25rem ;
 }
@@ -124,7 +136,7 @@ form.typepost > .post {
 	justify-content : center ;
 	align-items : center ;
 	gap : 1rem ;
-	margin-top : 0.25rem ;
+	margin-top : 1rem ;
 	width : fit-content ;
 }
 
